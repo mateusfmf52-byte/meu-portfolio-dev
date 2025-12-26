@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Dev | 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="logo-link">
+    <img src="logo.png" alt="Minha Logo" class="minha-logo">
+</a>
+        <nav class="nav-links">
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="https://wa.me/5521972867784" target="_blank" class="btn-contato">Contato</a>
+        </nav>
+        <div class="menu-icon"><i class="ph ph-list"></i></div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Criando o <br><span class="gradient-text">Futuro Digital</span></h1>
+            <p>Desenvolvimento web moderno, interfaces limpas e alta performance.</p>
+            <div class="botoes">
+                <button class="btn-primary" onclick="document.getElementById('produtos').scrollIntoView({behavior: 'smooth'})">
+    Ver Soluções Prontas <i class="ph ph-arrow-right"></i>
+</button>
+                <button class="btn-secondary">Saiba Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="features">
+        <h2>Minhas Habilidades</h2>
+        <div class="grid-container">
+    <div class="card">
+        <i class="ph ph-paint-brush-broad"></i>
+        <h3>UI Design</h3>
+        <p>Interfaces limpas.</p>
+    </div>
+
+    <div class="card destaque">
+        <i class="ph ph-code"></i>
+        <h3>Desenvolvimento Fullstack</h3>
+        <p>Especialista em criar soluções completas usando HTML, CSS, JS e Python. Foco em performance.</p>
+    </div>
+
+    <div class="card">
+        <i class="ph ph-rocket-launch"></i>
+        <h3>Performance</h3>
+        <p>Sites ultra rápidos.</p>
+    </div>
+    
+    <div class="card">
+        <i class="ph ph-robot"></i>
+        <h3>I.A.</h3>
+        <p>Integração com APIs.</p>
+    </div>
+</div>
+    </section>
+
+    <section id="produtos" class="produtos-section">
+    <h2>Soluções & Scripts <span class="highlight">Premium</span></h2>
+    <p class="subtitulo">Automações prontas para uso. Poupa tempo e aumenta a produtividade.</p>
+
+    <div class="grid-produtos">
+        
+        <div class="produto-card">
+            <div class="badge">Mais Vendido</div>
+            <div class="icon-box"><i class="ph ph-whatsapp-logo"></i></div>
+            <h3>Bot WhatsApp Marketing</h3>
+            <p>Script Python para envio automático de mensagens e gestão de leads.</p>
+            <div class="preco">
+                <span class="valor">R$ 97,00</span>
+                <span class="tipo">/ licença</span>
+            </div>
+            <a href="https://wa.me/5521972867784?text=Olá,%20vi%20no%20site%20e%20quero%20comprar%20o%20Bot%20WhatsApp!" target="_blank" class="btn-comprar">
+    Comprar Agora
+</a>
+            <ul class="features-list">
+                <li><i class="ph ph-check"></i> Sem mensalidade</li>
+                <li><i class="ph ph-check"></i> Código Aberto</li>
+            </ul>
+        </div>
+
+        <div class="produto-card">
+            <div class="icon-box"><i class="ph ph-instagram-logo"></i></div>
+            <h3>Automação Instagram</h3>
+            <p>Ferramenta para agendar posts e interagir com seguidores automaticamente.</p>
+            <div class="preco">
+                <span class="valor">R$ 120,00</span>
+                <span class="tipo">/ licença</span>
+            </div>
+            <a href="https://wa.me/5521972867784?text=Olá,%20tenho%20interesse%20na%20Automação%20de%20Instagram." target="_blank" class="btn-comprar">
+    Comprar Agora
+</a>
+            <ul class="features-list">
+                <li><i class="ph ph-check"></i> Anti-bloqueio</li>
+                <li><i class="ph ph-check"></i> Suporte incluso</li>
+            </ul>
+        </div>
+
+        <div class="produto-card">
+            <div class="icon-box"><i class="ph ph-globe"></i></div>
+            <h3>Scraper de Dados Web</h3>
+            <p>Extrai preços e informações de sites concorrentes em segundos.</p>
+            <div class="preco">
+                <span class="valor">R$ 150,00</span>
+                <span class="tipo">/ projeto</span>
+            </div>
+            <a href="https://wa.me/5521972867784?text=Olá,%20preciso%20do%20Scraper%20de%20Dados%20Web." target="_blank" class="btn-comprar">
+    Comprar Agora
+</a>
+            <ul class="features-list">
+                <li><i class="ph ph-check"></i> Exporta para Excel</li>
+                <li><i class="ph ph-check"></i> Fácil configuração</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+    <footer>
+        <p>Desenvolvido em 2025/2026. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="overlay" class="overlay"></div>
+
+<aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-header">
+        <h3>Menu <span class="highlight">Dev</span></h3>
+        <button id="close-btn" class="close-btn"><i class="ph ph-x"></i></button>
+    </div>
+
+    <div class="sidebar-content">
+        
+        <div class="menu-group">
+            <p class="group-title">Navegação</p>
+            <a href="#home" class="menu-item active"><i class="ph ph-house"></i> Início</a>
+            <a href="#sobre" class="menu-item"><i class="ph ph-user"></i> Sobre Mim</a>
+            <a href="#produtos" class="menu-item"><i class="ph ph-shopping-cart"></i> Loja de Scripts</a>
+        </div>
+
+        <div class="menu-group">
+            <p class="group-title">Recursos</p>
+            <a href="#" class="menu-item" onclick="abrirModal('modal-downloads')">
+    <i class="ph ph-download-simple"></i> Downloads Grátis
+</a>
+<a href="#" class="menu-item" onclick="abrirModal('modal-login')">
+    <i class="ph ph-user-circle"></i> Área do Cliente
+</a>
+            <a href="#" class="menu-item"><i class="ph ph-code-block"></i> Snippets de Código</a>
+        </div>
+
+        <div class="menu-group">
+            <p class="group-title">Sistema</p>
+            <a href="#" class="menu-item" onclick="abrirModal('modal-config')">
+    <i class="ph ph-gear"></i> Configurações
+</a>
+            <a href="https://wa.me/5511999999999" target="_blank" class="menu-item destaque-menu">
+                <i class="ph ph-whatsapp-logo"></i> Suporte
+            </a>
+        </div>
+
+    </div>
+    
+    <div class="sidebar-footer">
+        <p>V 2.0.26 | Brasil</p>
+    </div>
+</aside>
+
+<div id="modal-downloads" class="modal-container">
+    <div class="modal-content modal-large"> <div class="modal-header">
+            <h3><i class="ph ph-image"></i> Galeria de Wallpapers</h3>
+            <button class="close-modal" onclick="fecharModal('modal-downloads')"><i class="ph ph-x"></i></button>
+        </div>
+        
+        <div id="lista-wallpapers" class="wallpapers-grid">
+            <p style="text-align:center; width:100%">Carregando galeria...</p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-login" class="modal-container">
+    <div class="modal-content small-modal">
+        <div class="modal-header">
+            <h3><i class="ph ph-user-circle"></i> Acesso Restrito</h3>
+            <button class="close-modal" onclick="fecharModal('modal-login')"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="modal-body">
+            <form class="login-form" onsubmit="event.preventDefault(); alert('Em breve: Sistema de Login Real!');">
+                <div class="input-group">
+                    <i class="ph ph-envelope"></i>
+                    <input type="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="input-group">
+                    <i class="ph ph-lock"></i>
+                    <input type="password" placeholder="Sua Senha" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Entrar no Sistema</button>
+                <p class="forgot-pass">Esqueci minha senha</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="modal-config" class="modal-container">
+    <div class="modal-content small-modal">
+        <div class="modal-header">
+            <h3><i class="ph ph-gear"></i> Configurações</h3>
+            <button class="close-modal" onclick="fecharModal('modal-config')"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="modal-body">
+            <div class="config-item">
+                <div class="config-text">
+                    <span class="config-title">Aparência do Site</span>
+                    <span class="config-desc">Alternar entre modo escuro e claro</span>
+                </div>
+                <button id="theme-toggle" class="btn-toggle">
+                    <i class="ph ph-moon"></i> Alternar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
