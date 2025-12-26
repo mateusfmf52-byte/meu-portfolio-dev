@@ -60,18 +60,15 @@ def atualizar_banco_dados(nome_imagem, tema):
     
     print("📝 JSON atualizado!")
 
-# --- AQUI ESTÁ A MÁGICA DA AUTOMAÇÃO ---
+# --- VERSÃO GITHUB ACTIONS (SEM LOOP INFINITO) ---
 if __name__ == "__main__":
-    print("--- 🚀 ROBÔ AUTOMÁTICO INICIADO ---")
-    print("--- (Para parar o robô, aperte CTRL + C no terminal) ---")
-
-    while True: # ISSO É UM LOOP INFINITO
-        
-        # 1. Trabalha
-        imagem, tema_escolhido = baixar_imagem_ia()
-        if imagem:
-            atualizar_banco_dados(imagem, tema_escolhido)
-        
-        # 2. Dorme/Espera
-        print(f"💤 Dormindo por {TEMPO_ESPERA} segundos...")
-        time.sleep(TEMPO_ESPERA)
+    print("--- 🚀 ROBÔ INICIADO (MODO TAREFA ÚNICA) ---")
+    
+    # Ele tenta baixar 1 imagem
+    imagem, tema_escolhido = baixar_imagem_ia()
+    
+    if imagem:
+        atualizar_banco_dados(imagem, tema_escolhido)
+        print("✅ Tarefa cumprida! Encerrando script.")
+    else:
+        print("❌ Falha na tarefa.")
